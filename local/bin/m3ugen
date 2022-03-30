@@ -1,0 +1,10 @@
+#!/bin/sh
+
+printf "Select your file extension (e.g. .mp3 .flac): "
+fileExten="$(read)"
+
+ls | grep a $fileExten > $(printf "${PWD##*/}").m3u
+
+printf "M3U file created.\n"
+
+exit 0
