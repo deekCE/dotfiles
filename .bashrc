@@ -1,0 +1,27 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# alias ls='ls --color=auto'
+
+# Custom bash prompt
+export PS1="\[$(tput bold)\]\[$(tput setaf 4)\][\[$(tput setaf 2)\]\u\[$(tput setaf 4)\]@\[$(tput setaf 1)\]\h \[$(tput setaf 15)\]\W\[$(tput setaf 4)\]]\\$ \[$(tput sgr0)\]"
+
+# vim alias for nvim
+alias vim='nvim'
+
+# smci alias for sudo make clean install
+alias smci='sudo make clean install'
+
+# Adds ~/.local/bin to PATH
+export PATH=~/.local/bin:$PATH
+
+# Aliases for trash-cli
+alias tpt='trash-put'
+alias tet='trash-empty'
+alias tlt='trash-list'
+alias trt='trash-restore'
+alias trm='trash-rm'

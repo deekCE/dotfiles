@@ -1,0 +1,16 @@
+# Sets vi editing mode
+set editing-mode vi
+
+# Makes autocompletion case-insensitive
+set completion-ignore-case on
+
+# Color files by types
+set colored-stats On
+# Append char to indicate type
+set visible-stats On
+# Mark symlinked directories
+set mark-symlinked-directories On
+# Color the common prefix
+set colored-completion-prefix On
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On
