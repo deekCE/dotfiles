@@ -29,3 +29,15 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=10
 set clipboard=unnamedplus
 set ttyfast
+
+" VimPlug configuration
+call plug#begin()
+
+Plug 'Raimondi/delimitMate'
+Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-commentary'
+Plug 'ackyshake/VimCompletesMe'
+Plug 'justinmk/vim-dirvish'
+Plug 'tommcdo/vim-lion'
+
+call plug#end()
