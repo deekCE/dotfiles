@@ -25,3 +25,7 @@
 # Opens LibreOffice
 "libreoffice"
     Mod4 + o
+
+# Opens slalbums
+"slalbums"
+    Mod4 + a

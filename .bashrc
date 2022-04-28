@@ -17,7 +17,7 @@ alias vim='nvim'
 alias smci='sudo make clean install'
 
 # Adds ~/.local/bin to PATH
-export PATH=~/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Aliases for trash-cli
 alias tpt='trash-put'
@@ -25,3 +25,6 @@ alias tet='trash-empty'
 alias tlt='trash-list'
 alias trt='trash-restore'
 alias trm='trash-rm'
+
+# Adds ~/.local/bin/platform-tools to PATH
+export PATH=$HOME/.local/bin/platform-tools:$PATH

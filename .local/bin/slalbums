@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $HOME/Music/Albums && st -e lf
+
+exit 0
