@@ -31,3 +31,10 @@ export PATH=$HOME/.local/bin/platform-tools:$PATH
 
 # Alias for restarting cupsd
 alias cupsrst='sudo rc-service cupsd restart'
+
+# Aliases for git
+alias gits='git status'
+alias gitk='git checkout'
+alias gita='git add'
+alias gitc='git commit -m'
+alias gitp='git push'
