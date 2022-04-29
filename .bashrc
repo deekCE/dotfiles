@@ -14,7 +14,7 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 4)\][\[$(tput setaf 2)\]\u\[$(tput se
 alias vim='nvim'
 
 # smci alias for sudo make clean install
-alias smci='sudo make clean install'
+alias mkclins='sudo make clean install'
 
 # Adds ~/.local/bin to PATH
 export PATH=$HOME/.local/bin:$PATH
@@ -28,3 +28,6 @@ alias trm='trash-rm'
 
 # Adds ~/.local/bin/platform-tools to PATH
 export PATH=$HOME/.local/bin/platform-tools:$PATH
+
+# Alias for restarting cupsd
+alias cupsrst='rc-service cupsd restart'
