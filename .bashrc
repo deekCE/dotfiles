@@ -30,4 +30,4 @@ alias trm='trash-rm'
 export PATH=$HOME/.local/bin/platform-tools:$PATH
 
 # Alias for restarting cupsd
-alias cupsrst='rc-service cupsd restart'
+alias cupsrst='sudo rc-service cupsd restart'
