@@ -30,8 +30,8 @@ alias trm='trash-rm'
 export PATH=$HOME/.local/bin/platform-tools:$PATH
 
 # Aliases for cups
-alias cdrst='sudo rc-service cupsd restart'
-alias cdstp='sudo rc-service cupsd stop'
+alias cupstart='sudo rc-service cupsd restart'
+alias cupstop='sudo rc-service cupsd stop'
 
 # Aliases for git
 alias gits='git status'
