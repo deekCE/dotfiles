@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $HOME/Documents && st -e lf
+
+exit 0

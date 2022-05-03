@@ -29,3 +29,7 @@
 # Opens slalbums
 "slalbums"
     Mod4 + a
+
+# Opens sldocuments
+"sldocuments"
+    Mod4 + d
