@@ -37,4 +37,5 @@ alias cl='clear'
 
 alias nf='neofetch'
 
+# Makes cal show Monday as the first day
 alias cal='cal -m'
