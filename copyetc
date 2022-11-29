@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [[ $EUID -ne 0 ]]; then
+    printf "Please, run this script as root\n"
+    exit 1
+else
+    doas cp -r $(ls -A etc/) /etc
+fi
+
+exit 0
