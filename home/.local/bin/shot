@@ -9,7 +9,7 @@ case $1 in
     -Sf) maim -u $scrdir/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
 esac
 
-new="$(dmenu -p "Enter name (Esc to leave it as default)")" || exit 0
+new="$(dmenu -p 'Enter name (Esc to leave it as default)')" || exit 0
 mv $(ls -t $scrdir/screen* | head -1) $scrdir/$new.png
 
 exit 0

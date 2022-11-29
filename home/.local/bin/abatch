@@ -3,7 +3,7 @@
 stat="$(cat /sys/class/power_supply/BAT0/status)"
 bat="$(cat /sys/class/power_supply/BAT0/capacity)"
 
-if [ "$stat" = "Discharging" ]; then
+if [ "$stat" = 'Discharging' ]; then
     if [ $bat -gt 15 ]; then
         printf "^d^ 󰁹 $bat%% "
     elif [ $bat -gt 5 ]; then
