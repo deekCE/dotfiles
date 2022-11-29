@@ -2,7 +2,7 @@
 deekCE's dotfiles.
 
 ## Contents
-### home
+### home:
 * .config/
     * fontconfig
         * fonts.conf
@@ -24,7 +24,7 @@ deekCE's dotfiles.
 * .xbindkeysrc
 * .xinitrc
 
-### etc
+### etc:
 * X11/
     * xorg.conf.d/
         * 00-keyboard.conf
