@@ -23,3 +23,11 @@ deekCE's dotfiles.
 * .inputrc
 * .xbindkeysrc
 * .xinitrc
+
+### etc
+* X11/
+    * xorg.conf.d/
+        * 00-keyboard.conf
+        * 20-amdgpu.conf
+        * 20-thinkpad.conf
+        * 30-touchpad.conf
