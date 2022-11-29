@@ -1,0 +1,11 @@
+#!/bin/sh
+
+blfile=/sys/class/backlight/amdgpu_bl0/brightness
+i=17
+
+case $1 in
+    -d) printf "$(($(cat $blfile) - $i))" > $blfile ;;
+    -i) printf "$(($(cat $blfile) + $i))" > $blfile ;;
+esac
+
+exit 0

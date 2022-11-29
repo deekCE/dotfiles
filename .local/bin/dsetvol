@@ -1,0 +1,7 @@
+#!/bin/sh
+
+vol="$(dmenu -p "Set new volume ("$(pamixer --get-volume)"%)")" || exit 1
+
+pamixer --set-volume $vol
+
+exit 0

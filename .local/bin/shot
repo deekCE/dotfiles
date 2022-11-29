@@ -1,0 +1,15 @@
+#!/bin/sh
+
+scrdir="$HOME/Pictures/Screenshots"
+
+case $1 in
+    -s) maim -s -u | xclip -selection clipboard -t image/png -i && exit 0 || exit 1 ;;
+    -f) maim -u | xclip -selection clipboard -t image/png -i && exit 0 || exit 1 ;;
+    -Ss) maim -s -u $scrdir/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
+    -Sf) maim -u $scrdir/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
+esac
+
+new="$(dmenu -p "Enter name (Esc to leave it as default)")" || exit 0
+mv $(ls -t $scrdir/screen* | head -1) $scrdir/$new.png
+
+exit 0

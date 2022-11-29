@@ -1,0 +1,13 @@
+Xft.dpi: 120
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdlegacy
+Xft.rgba: rgb
+
+Xcursor.size: 32
+
+Sxiv.background: #000000
+Sxiv.foreground: #e4e4e4
+Sxiv.font: Meslo LG M-10

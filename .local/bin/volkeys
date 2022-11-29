@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case $1 in
+    -d) pamixer -d 5 ;;
+    -t) pamixer -t ;;
+    -i) pamixer -i 5 ;;
+esac
+
+exit 0

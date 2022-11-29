@@ -1,0 +1,5 @@
+#!/bin/sh
+
+spotify --force-device-scale-factor=1.25
+
+exit 0
