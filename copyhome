@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cp -r $(ls -A -I .git -I copyall -I README.md) $HOME
+cp -r $(ls -A home/) $HOME
 
 exit 0
