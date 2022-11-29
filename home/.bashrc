@@ -24,16 +24,18 @@ export PATH=$HOME/.local/bin:$PATH
 # Makes ls show hidden files and also look pretty
 alias lsa='ls -A --color=auto'
 
-alias nv='nvim'
-
 alias sx='startx'
 
-alias mkci='doas make clean install'
+alias nv='nvim'
+
+alias g='git'
 
 alias pow='doas poweroff'
 alias reb='doas reboot'
 
 alias cl='clear'
+
+alias mkci='doas make clean install'
 
 alias nf='neofetch'
 
