@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cp -r $(ls -A home/) $HOME
+cd home && cp -r $(ls -A) $HOME
 
 exit 0
