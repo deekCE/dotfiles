@@ -2,7 +2,7 @@
 deekCE's dotfiles.
 
 ## Contents
-### Home
+### home
 * .config/
     * fontconfig
         * fonts.conf
