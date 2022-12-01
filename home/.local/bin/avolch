@@ -7,7 +7,7 @@ if grep -A3 -si 'Headphone Playback Switch' /proc/asound/card*/* | grep -q '0x80
 elif [ "$vol" -le '60' ]; then
     printf "^d^ 󰕾 $vol%% "
 else
-    printf "^c#e4e4e4^^b#d70000^ 󰕾 $vol%% ^d^"
+    printf "^c#e4e4e4^^b#d70000^ 󰕾 $vol%% ^d^" # kistoo gaming
 fi
 
 exit 0
