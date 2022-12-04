@@ -4,7 +4,7 @@ if [[ $EUID -ne 0 ]]; then
     printf "Please, run this script as root\n"
     exit 1
 else
-    cd etc && doas cp -r $(ls -A) /etc
+    cd etc && cp -r $(ls -A) /etc
 fi
 
 exit 0
