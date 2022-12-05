@@ -14,7 +14,7 @@ shopt -s autocd
 # Bash completion for doas
 complete -cf doas
 
-# Adds ~/.local/bin to PATH
+# Adds user scripts folder to PATH
 export PATH=$HOME/.local/bin:$PATH
 
 #
