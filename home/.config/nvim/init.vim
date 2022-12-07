@@ -26,7 +26,7 @@ set hlsearch
 " Miscellaneous
 set wildmode=longest,list
 set colorcolumn=80
-highlight ColorColumn ctermbg=10
+highlight ColorColumn ctermbg=8
 set clipboard=unnamedplus
 set ttyfast
 set noshowmode
