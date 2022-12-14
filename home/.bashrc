@@ -22,7 +22,8 @@ export PATH=$HOME/.local/bin:$PATH
 #
 
 # Makes ls show hidden files and also look pretty
-alias lsa='ls -A --color=auto'
+alias ls='ls --color=auto'
+alias lsa='ls -A'
 
 alias sx='startx'
 

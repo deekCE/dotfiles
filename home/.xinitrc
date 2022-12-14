@@ -4,6 +4,8 @@ xrandr --dpi 120
 xrdb -load $HOME/.Xresources
 # Fakes KDE Plasma Desktop
 export XDG_CURRENT_DESKTOP=KDE
+# Fixes dumb, stupid D-Bus Systemd lag thingy
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
 xbindkeys &
 aslstatus &
