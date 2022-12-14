@@ -30,6 +30,7 @@ alias sx='startx'
 alias nv='nvim'
 
 alias g='git'
+alias gagc='git add -A && git commit -m'
 
 alias pow='doas poweroff'
 alias reb='doas reboot'

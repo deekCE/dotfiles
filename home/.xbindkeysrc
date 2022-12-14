@@ -63,7 +63,7 @@
 # Browsers
 "librewolf"
     Mod4 + w
-"brave"
+"com.brave.Browser"
     Mod4 + b
 
 "dolphin"
@@ -78,5 +78,5 @@
 "libreoffice"
     Mod4 + o
 
-"spotify"
+"com.spotify.Client"
     Mod4 + s
