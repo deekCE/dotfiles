@@ -1,13 +1,13 @@
 #!/bin/sh
 
-vol="$(pamixer --get-volume)"
+getVolume="$(pamixer --get-volume)"
 
 if grep -A3 -si 'Headphone Playback Switch' /proc/asound/card*/* | grep -q '0x80'; then
-    printf "^d^ 󰕾 $vol%% "
-elif [ "$vol" -le '60' ]; then
-    printf "^d^ 󰕾 $vol%% "
+    printf "^d^ 󰕾 $getVolume%% "
+elif [ "$getVolume" -le '60' ]; then
+    printf "^d^ 󰕾 $getVolume%% "
 else
-    printf "^c#e4e4e4^^b#d70000^ 󰕾 $vol%% ^d^" # kistoo gaming
+    printf "^c#e4e4e4^^b#d70000^ 󰕾 $getVolume%% ^d^" # kistoo gaming
 fi
 
 exit 0
