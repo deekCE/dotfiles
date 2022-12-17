@@ -5,6 +5,6 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-cd etc && cp -r $(ls -A) /etc
+java -jar ns-usbloader-*.jar
 
 exit 0

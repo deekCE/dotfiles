@@ -1,15 +1,15 @@
 #!/bin/sh
 
-screenshotDirectory="$HOME/Pictures/Screenshots"
+screenshotdirectory="$HOME/Pictures/Screenshots"
 
 case $1 in
     -s) maim -s -u | xclip -selection clipboard -t image/png -i && exit 0 || exit 1 ;;
     -f) maim -u | xclip -selection clipboard -t image/png -i && exit 0 || exit 1 ;;
-    -Ss) maim -s -u $screenshotDirectory/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
-    -Sf) maim -u $screenshotDirectory/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
+    -Ss) maim -s -u $screenshotdirectory/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
+    -Sf) maim -u $screenshotdirectory/screen$(date +%d%m%y%H%M%S).png || exit 1 ;;
 esac
 
-newName="$(dmenu -p 'Enter name (Esc to leave it as default)')" || exit 0
-mv $(ls -t $screenshotDirectory/screen* | head -1) $screenshotDirectory/$newName.png
+newname="$(dmenu -p 'Enter name (Esc to leave it as default)')" || exit 0
+mv $(ls -t $screenshotdirectory/screen* | head -1) $screenshotdirectory/$newname.png
 
 exit 0

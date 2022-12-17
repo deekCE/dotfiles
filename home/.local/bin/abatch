@@ -1,19 +1,19 @@
 #!/bin/sh
 
-batteryDirectory='/sys/class/power_supply/BAT0/'
-batteryCapacity="$(cat $batteryDirectory/capacity)"
-batteryStatus="$(cat $batteryDirectory/status)"
+batterydirectory='/sys/class/power_supply/BAT0/'
+batterycapacity="$(cat $batterydirectory/capacity)"
+batterystatus="$(cat $batterydirectory/status)"
 
-if [ "$batteryStatus" = "Discharging" ]; then
-    if [ $batteryCapacity -gt 15 ]; then
-        printf "^d^ 󰁹 $batteryCapacity%% "
-    elif [ $batteryCapacity -gt 5 ]; then
-        printf "^c#262626^^b#d7af00^ 󰁹 $batteryCapacity%% ^d^"
+if [ "$batterystatus" = "Discharging" ]; then
+    if [ $batterycapacity -gt 15 ]; then
+        printf "^d^ 󰁹 $batterycapacity%% "
+    elif [ $batterycapacity -gt 5 ]; then
+        printf "^c#262626^^b#d7af00^ 󰁹 $batterycapacity%% ^d^"
     else
-        printf "^c#e4e4e4^^b#d70000^ 󰁹 $batteryCapacity%% ^d^"
+        printf "^c#e4e4e4^^b#d70000^ 󰁹 $batterycapacity%% ^d^"
     fi
 else
-    printf "^c#000000^^b#87af00^ 󰁹 $batteryCapacity%% ^d^"
+    printf "^c#000000^^b#87af00^ 󰁹 $batterycapacity%% ^d^"
 fi
 
 exit 0

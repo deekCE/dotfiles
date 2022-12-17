@@ -1,11 +1,11 @@
 #!/bin/sh
 
-backlightFile=/sys/class/backlight/amdgpu_bl0/brightness
+backlightfile=/sys/class/backlight/amdgpu_bl0/brightness
 step=17
 
 case $1 in
-    -d) printf "$(($(cat $backlightFile) - $step))" > $backlightFile ;;
-    -i) printf "$(($(cat $backlightFile) + $step))" > $backlightFile ;;
+    -d) printf "$(($(cat $backlightfile) - $step))" > $backlightfile ;;
+    -i) printf "$(($(cat $backlightfile) + $step))" > $backlightfile ;;
 esac
 
 exit 0
