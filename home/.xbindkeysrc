@@ -66,6 +66,9 @@
 "com.brave.Browser"
     Mod4 + b
 
+"com.spotify.Client"
+    Mod4 + s
+
 "dolphin"
     Mod4 + d
 
@@ -78,5 +81,5 @@
 "libreoffice"
     Mod4 + o
 
-"com.spotify.Client"
-    Mod4 + s
+"obsidian"
+    Mod4 + n
