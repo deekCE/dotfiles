@@ -17,6 +17,9 @@ complete -cf doas
 # Adds user scripts folder to PATH
 export PATH=$HOME/.local/bin:$PATH
 
+# Runs ufetch
+ufetch-crima
+
 #
 # Aliases
 #
@@ -39,7 +42,7 @@ alias cl='clear'
 
 alias mkci='doas make clean install'
 
-alias nf='neofetch'
+alias uf='ufetch-crima'
 
 # Makes cal show Monday as the first day
 alias cal='cal -m'
