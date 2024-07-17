@@ -1,7 +1,7 @@
 " Disables vi compatibility
 set nocompatible
 
-" Numering rules
+" Rules for number lines
 set number
 set relativenumber
 
